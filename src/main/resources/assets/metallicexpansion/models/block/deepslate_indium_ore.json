@@ -1,0 +1,6 @@
+{
+  "parent" : "block/cube_all",
+  "textures" : {
+    "all": "metallicexpansion:block/deepslate_indium_ore"
+  }
+}

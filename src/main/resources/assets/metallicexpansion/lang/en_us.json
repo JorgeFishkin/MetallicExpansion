@@ -1,0 +1,8 @@
+{
+  "item.metallicexpansion.indium_ingot" : "Indium Ingot",
+  "item.metallicexpansion.raw_indium" : "Raw Indium",
+
+  "block.metallicexpansion.indium_block" : "Indium Block",
+  "block.metallicexpansion.indium_ore" : "Indium Ore",
+  "block.metallicexpansion.deepslate_indium_ore" : "Deepslate Indium Ore"
+}
