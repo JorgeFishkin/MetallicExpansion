@@ -26,5 +26,6 @@ public class ModCreativeModeTabs {
                 output.accept(ModBlocks.INDIUM_BLOCK.get());
                 output.accept(ModBlocks.INDIUM_ORE.get());
                 output.accept(ModBlocks.DEEPSLATE_INDIUM_ORE.get());
+                output.accept(ModBlocks.END_STONE_INDIUM_ORE.get());
             }).build());
 }

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "indium_ingot",
+  "ingredients": [
+    {
+      "item": "metallicexpansion:indium_block"
+    }
+  ],
+  "result": {
+    "item": "metallicexpansion:indium_ingot",
+    "count": 9
+  }
+}

@@ -26,7 +26,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> DEEPSLATE_INDIUM_ORE = registerBlock("deepslate_indium_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)));
 
-    public static final RegistryObject<Block> ENDSTONE_INDIUM_ORE = registerBlock("endstone_indium_ore",
+    public static final RegistryObject<Block> END_STONE_INDIUM_ORE = registerBlock("end_stone_indium_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.END_STONE)));
 
     private static final <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
