@@ -2,6 +2,7 @@ package net.jorgefishkin.metallicexpansion;
 
 import com.mojang.logging.LogUtils;
 import net.jorgefishkin.metallicexpansion.block.ModBlocks;
+import net.jorgefishkin.metallicexpansion.item.ModCreativeModeTabs;
 import net.jorgefishkin.metallicexpansion.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -32,6 +33,7 @@ public class MetallicExpansionMod
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
