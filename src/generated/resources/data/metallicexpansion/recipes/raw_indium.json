@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "indium",
+  "key": {
+    "#": {
+      "item": "metallicexpansion:raw_indium"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "metallicexpansion:raw_indium_block"
+  },
+  "show_notification": true
+}

@@ -1,8 +1,22 @@
 {
   "item.metallicexpansion.indium_ingot" : "Indium Ingot",
   "item.metallicexpansion.raw_indium" : "Raw Indium",
+  "item.metallicexpansion.indium_nugget" : "Indium Nugget",
+  "item.metallicexpansion.indium_dust" : "Indium Dust",
+
+  "item.metallicexpansion.indium_sword" : "Indium Sword",
+  "item.metallicexpansion.indium_pickaxe" : "Indium Pickaxe",
+  "item.metallicexpansion.indium_axe" : "Indium Axe",
+  "item.metallicexpansion.indium_shovel" : "Indium Shovel",
+  "item.metallicexpansion.indium_hoe" : "Indium Hoe",
+
+  "item.metallicexpansion.indium_helmet" : "Indium Helmet",
+  "item.metallicexpansion.indium_chestplate" : "Indium Chestplate",
+  "item.metallicexpansion.indium_leggings" : "Indium Leggings",
+  "item.metallicexpansion.indium_boots" : "Indium Boots",
 
   "block.metallicexpansion.indium_block" : "Indium Block",
+  "block.metallicexpansion.raw_indium_block" : "Raw Indium Block",
   "block.metallicexpansion.indium_ore" : "Indium Ore",
   "block.metallicexpansion.deepslate_indium_ore" : "Deepslate Indium Ore",
   "block.metallicexpansion.end_stone_indium_ore" : "End Stone Indium Ore",
