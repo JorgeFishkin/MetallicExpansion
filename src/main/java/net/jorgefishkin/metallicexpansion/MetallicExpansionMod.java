@@ -60,10 +60,32 @@ public class MetallicExpansionMod
             event.accept(ModItems.RAW_INDIUM);
         }
 
-        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
-            event.accept(ModBlocks.INDIUM_BLOCK);
+        if(event.getTabKey() == CreativeModeTabs.COMBAT){
+            event.accept(ModItems.INDIUM_SWORD);
+            event.accept(ModItems.INDIUM_HELMET);
+            event.accept(ModItems.INDIUM_CHESTPLATE);
+            event.accept(ModItems.INDIUM_LEGGINGS);
+            event.accept(ModItems.INDIUM_BOOTS);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES){
+            event.accept(ModItems.INDIUM_SHOVEL);
+            event.accept(ModItems.INDIUM_PICKAXE);
+            event.accept(ModItems.INDIUM_AXE);
+            event.accept(ModItems.INDIUM_HOE);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS){
             event.accept(ModBlocks.INDIUM_ORE);
             event.accept(ModBlocks.DEEPSLATE_INDIUM_ORE);
+            event.accept(ModBlocks.END_STONE_INDIUM_ORE);
+            event.accept(ModBlocks.RAW_INDIUM_BLOCK);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept(ModBlocks.INDIUM_BLOCK);
+
+
         }
     }
 
