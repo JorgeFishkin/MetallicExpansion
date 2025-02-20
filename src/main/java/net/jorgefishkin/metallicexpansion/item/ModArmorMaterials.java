@@ -26,7 +26,13 @@ public enum ModArmorMaterials implements ArmorMaterial {
         p_266650_.put(Type.LEGGINGS, 2);
         p_266650_.put(Type.CHESTPLATE, 3);
         p_266650_.put(Type.HELMET, 1);
-    }), 25, SoundEvents.ARMOR_EQUIP_GOLD, 0.0F, 0.0F, () -> Ingredient.of(new ItemLike[]{ModItems.INDIUM_INGOT.get()}));
+    }), 25, SoundEvents.ARMOR_EQUIP_GOLD, 0.0F, 0.0F, () -> Ingredient.of(new ItemLike[]{ModItems.INDIUM_INGOT.get()})),
+    PLATINUM("platinum", 24, Util.make(new EnumMap<>(ArmorItem.Type.class), (p_266649_) -> {
+        p_266649_.put(Type.BOOTS, 3);
+        p_266649_.put(Type.LEGGINGS, 6);
+        p_266649_.put(Type.CHESTPLATE, 8);
+        p_266649_.put(Type.HELMET, 3);
+    }), 14, SoundEvents.ARMOR_EQUIP_GOLD, 2.0F, 0.0F, () -> Ingredient.of(new ItemLike[]{ModItems.PLATINUM_INGOT.get()}));
 
 
     public static final StringRepresentable.EnumCodec<ArmorMaterials> CODEC = StringRepresentable.fromEnum(ArmorMaterials::values);

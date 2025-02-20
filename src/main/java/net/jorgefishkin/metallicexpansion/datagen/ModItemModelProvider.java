@@ -35,10 +35,21 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.INDIUM_SHOVEL);
         handheldItem(ModItems.INDIUM_HOE);
 
+        handheldItem(ModItems.PLATINUM_SWORD);
+        handheldItem(ModItems.PLATINUM_PICKAXE);
+        handheldItem(ModItems.PLATINUM_AXE);
+        handheldItem(ModItems.PLATINUM_SHOVEL);
+        handheldItem(ModItems.PLATINUM_HOE);
+
         simpleItem(ModItems.INDIUM_HELMET);
         simpleItem(ModItems.INDIUM_CHESTPLATE);
         simpleItem(ModItems.INDIUM_LEGGINGS);
         simpleItem(ModItems.INDIUM_BOOTS);
+
+        simpleItem(ModItems.PLATINUM_HELMET);
+        simpleItem(ModItems.PLATINUM_CHESTPLATE);
+        simpleItem(ModItems.PLATINUM_LEGGINGS);
+        simpleItem(ModItems.PLATINUM_BOOTS);
 
 
     }

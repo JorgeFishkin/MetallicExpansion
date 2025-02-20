@@ -17,4 +17,8 @@ public class ModToolTiers {
                     Tags.Blocks.NEEDS_GOLD_TOOL, () -> Ingredient.of(ModItems.INDIUM_INGOT.get())),
                     new ResourceLocation(MetallicExpansionMod.MOD_ID, "indium"), List.of(Tiers.STONE), List.of(Tiers.IRON));
 
+    public static final Tier PLATINUM = TierSortingRegistry.registerTier(
+            new ForgeTier(3, 1000, 8f, 3f, 14,
+                    Tags.Blocks.NEEDS_GOLD_TOOL, () -> Ingredient.of(ModItems.PLATINUM_INGOT.get())),
+            new ResourceLocation(MetallicExpansionMod.MOD_ID, "platinum"), List.of(Tiers.DIAMOND), List.of(Tiers.NETHERITE));
 }

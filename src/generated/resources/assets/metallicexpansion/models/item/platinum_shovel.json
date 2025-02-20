@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "metallicexpansion:item/platinum_shovel"
+  }
+}

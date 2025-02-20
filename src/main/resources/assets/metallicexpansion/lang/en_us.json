@@ -15,10 +15,21 @@
   "item.metallicexpansion.indium_shovel" : "Indium Shovel",
   "item.metallicexpansion.indium_hoe" : "Indium Hoe",
 
+  "item.metallicexpansion.platinum_sword" : "Platinum Sword",
+  "item.metallicexpansion.platinum_pickaxe" : "Platinum Pickaxe",
+  "item.metallicexpansion.platinum_axe" : "Platinum Axe",
+  "item.metallicexpansion.platinum_shovel" : "Platinum Shovel",
+  "item.metallicexpansion.platinum_hoe" : "Platinum Hoe",
+
   "item.metallicexpansion.indium_helmet" : "Indium Helmet",
   "item.metallicexpansion.indium_chestplate" : "Indium Chestplate",
   "item.metallicexpansion.indium_leggings" : "Indium Leggings",
   "item.metallicexpansion.indium_boots" : "Indium Boots",
+
+  "item.metallicexpansion.platinum_helmet" : "Platinum Helmet",
+  "item.metallicexpansion.platinum_chestplate" : "Platinum Chestplate",
+  "item.metallicexpansion.platinum_leggings" : "Platinum Leggings",
+  "item.metallicexpansion.platinum_boots" : "Platinum Boots",
 
   "block.metallicexpansion.indium_block" : "Indium Block",
   "block.metallicexpansion.raw_indium_block" : "Block of Raw Indium",

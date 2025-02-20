@@ -37,6 +37,11 @@ public class ModCreativeModeTabs {
                 output.accept(ModItems.INDIUM_SHOVEL.get());
                 output.accept(ModItems.INDIUM_HOE.get());
 
+                output.accept(ModItems.PLATINUM_SWORD.get());
+                output.accept(ModItems.PLATINUM_PICKAXE.get());
+                output.accept(ModItems.PLATINUM_AXE.get());
+                output.accept(ModItems.PLATINUM_SHOVEL.get());
+                output.accept(ModItems.PLATINUM_HOE.get());
 
 
                 output.accept(ModItems.INDIUM_HELMET.get());
@@ -44,6 +49,10 @@ public class ModCreativeModeTabs {
                 output.accept(ModItems.INDIUM_LEGGINGS.get());
                 output.accept(ModItems.INDIUM_BOOTS.get());
 
+                output.accept(ModItems.PLATINUM_HELMET.get());
+                output.accept(ModItems.PLATINUM_CHESTPLATE.get());
+                output.accept(ModItems.PLATINUM_LEGGINGS.get());
+                output.accept(ModItems.PLATINUM_BOOTS.get());
 
 
                 output.accept(ModBlocks.INDIUM_BLOCK.get());

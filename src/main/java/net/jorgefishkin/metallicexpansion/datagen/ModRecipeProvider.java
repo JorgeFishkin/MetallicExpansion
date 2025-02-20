@@ -40,6 +40,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('S', Tags.Items.RODS_WOODEN)
                 .unlockedBy("has_indium_ingot", inventoryTrigger(ItemPredicate.Builder.item().of(ModItems.INDIUM_INGOT.get()).build()))
                 .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.PLATINUM_SWORD.get())
+                .pattern(" I ")
+                .pattern(" I ")
+                .pattern(" S ")
+                .define('I', ModTags.Items.PLATINUM_INGOT)
+                .define('S', Tags.Items.RODS_WOODEN)
+                .unlockedBy("has_platinum_ingot", inventoryTrigger(ItemPredicate.Builder.item().of(ModItems.PLATINUM_INGOT.get()).build()))
+                .save(consumer);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.INDIUM_PICKAXE.get())
                 .pattern("III")
@@ -48,6 +56,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('I', ModTags.Items.INDIUM_INGOT)
                 .define('S', Tags.Items.RODS_WOODEN)
                 .unlockedBy("has_indium_ingot", inventoryTrigger(ItemPredicate.Builder.item().of(ModItems.INDIUM_INGOT.get()).build()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.PLATINUM_PICKAXE.get())
+                .pattern("III")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('I', ModTags.Items.PLATINUM_INGOT)
+                .define('S', Tags.Items.RODS_WOODEN)
+                .unlockedBy("has_platinum_ingot", inventoryTrigger(ItemPredicate.Builder.item().of(ModItems.PLATINUM_INGOT.get()).build()))
                 .save(consumer);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.INDIUM_AXE.get())
@@ -58,6 +74,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('S', Tags.Items.RODS_WOODEN)
                 .unlockedBy("has_indium_ingot", inventoryTrigger(ItemPredicate.Builder.item().of(ModItems.INDIUM_INGOT.get()).build()))
                 .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.PLATINUM_AXE.get())
+                .pattern("II ")
+                .pattern("IS ")
+                .pattern(" S ")
+                .define('I', ModTags.Items.PLATINUM_INGOT)
+                .define('S', Tags.Items.RODS_WOODEN)
+                .unlockedBy("has_platinum_ingot", inventoryTrigger(ItemPredicate.Builder.item().of(ModItems.PLATINUM_INGOT.get()).build()))
+                .save(consumer);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.INDIUM_SHOVEL.get())
                 .pattern(" I ")
@@ -66,6 +90,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('I', ModTags.Items.INDIUM_INGOT)
                 .define('S', Tags.Items.RODS_WOODEN)
                 .unlockedBy("has_indium_ingot", inventoryTrigger(ItemPredicate.Builder.item().of(ModItems.INDIUM_INGOT.get()).build()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.PLATINUM_SHOVEL.get())
+                .pattern(" I ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('I', ModTags.Items.PLATINUM_INGOT)
+                .define('S', Tags.Items.RODS_WOODEN)
+                .unlockedBy("has_platinum_ingot", inventoryTrigger(ItemPredicate.Builder.item().of(ModItems.PLATINUM_INGOT.get()).build()))
                 .save(consumer);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.INDIUM_HOE.get())
@@ -76,6 +108,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('S', Tags.Items.RODS_WOODEN)
                 .unlockedBy("has_indium_ingot", inventoryTrigger(ItemPredicate.Builder.item().of(ModItems.INDIUM_INGOT.get()).build()))
                 .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.PLATINUM_HOE.get())
+                .pattern("II ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('I', ModTags.Items.PLATINUM_INGOT)
+                .define('S', Tags.Items.RODS_WOODEN)
+                .unlockedBy("has_platinum_ingot", inventoryTrigger(ItemPredicate.Builder.item().of(ModItems.PLATINUM_INGOT.get()).build()))
+                .save(consumer);
 
         // Armor
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.INDIUM_HELMET.get())
@@ -85,6 +125,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('I', ModTags.Items.INDIUM_INGOT)
                 .unlockedBy("has_indium_ingot", inventoryTrigger(ItemPredicate.Builder.item().of(ModItems.INDIUM_INGOT.get()).build()))
                 .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.PLATINUM_HELMET.get())
+                .pattern("III")
+                .pattern("I I")
+                .pattern("   ")
+                .define('I', ModTags.Items.PLATINUM_INGOT)
+                .unlockedBy("has_platinum_ingot", inventoryTrigger(ItemPredicate.Builder.item().of(ModItems.PLATINUM_INGOT.get()).build()))
+                .save(consumer);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.INDIUM_CHESTPLATE.get())
                 .pattern("I I")
@@ -92,6 +139,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("III")
                 .define('I', ModTags.Items.INDIUM_INGOT)
                 .unlockedBy("has_indium_ingot", inventoryTrigger(ItemPredicate.Builder.item().of(ModItems.INDIUM_INGOT.get()).build()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.PLATINUM_CHESTPLATE.get())
+                .pattern("I I")
+                .pattern("III")
+                .pattern("III")
+                .define('I', ModTags.Items.PLATINUM_INGOT)
+                .unlockedBy("has_platinum_ingot", inventoryTrigger(ItemPredicate.Builder.item().of(ModItems.PLATINUM_INGOT.get()).build()))
                 .save(consumer);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.INDIUM_LEGGINGS.get())
@@ -101,6 +155,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('I', ModTags.Items.INDIUM_INGOT)
                 .unlockedBy("has_indium_ingot", inventoryTrigger(ItemPredicate.Builder.item().of(ModItems.INDIUM_INGOT.get()).build()))
                 .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.PLATINUM_LEGGINGS.get())
+                .pattern("III")
+                .pattern("I I")
+                .pattern("I I")
+                .define('I', ModTags.Items.PLATINUM_INGOT)
+                .unlockedBy("has_platinum_ingot", inventoryTrigger(ItemPredicate.Builder.item().of(ModItems.PLATINUM_INGOT.get()).build()))
+                .save(consumer);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.INDIUM_BOOTS.get())
                 .pattern("   ")
@@ -108,6 +169,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("I I")
                 .define('I', ModTags.Items.INDIUM_INGOT)
                 .unlockedBy("has_indium_ingot", inventoryTrigger(ItemPredicate.Builder.item().of(ModItems.INDIUM_INGOT.get()).build()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.PLATINUM_BOOTS.get())
+                .pattern("   ")
+                .pattern("I I")
+                .pattern("I I")
+                .define('I', ModTags.Items.PLATINUM_INGOT)
+                .unlockedBy("has_platinum_ingot", inventoryTrigger(ItemPredicate.Builder.item().of(ModItems.PLATINUM_INGOT.get()).build()))
                 .save(consumer);
 
         // Nugget to Ingot

@@ -37,29 +37,50 @@ public class ModItems {
 
     // Tools
     public static final RegistryObject<Item> INDIUM_SWORD = ITEMS.register("indium_sword",
-            () -> new SwordItem(ModToolTiers.INDIUM, 2, 3, new Item.Properties().durability(32)));
+            () -> new SwordItem(ModToolTiers.INDIUM, 2, -2.4F, new Item.Properties().durability(32)));
+    public static final RegistryObject<Item> PLATINUM_SWORD = ITEMS.register("platinum_sword",
+            () -> new SwordItem(ModToolTiers.PLATINUM, 3, -2.4F, new Item.Properties().durability(1000)));
 
     public static final RegistryObject<Item> INDIUM_PICKAXE = ITEMS.register("indium_pickaxe",
-            () -> new PickaxeItem(ModToolTiers.INDIUM, 1, 3, new Item.Properties().durability(32)));
+            () -> new PickaxeItem(ModToolTiers.INDIUM, 1, -2.8F, new Item.Properties().durability(32)));
+    public static final RegistryObject<Item> PLATINUM_PICKAXE = ITEMS.register("platinum_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.PLATINUM, 2, -2.8F, new Item.Properties().durability(1000)));
 
     public static final RegistryObject<Item> INDIUM_AXE = ITEMS.register("indium_axe",
-            () -> new AxeItem(ModToolTiers.INDIUM, 3, 3, new Item.Properties().durability(32)));
+            () -> new AxeItem(ModToolTiers.INDIUM, 4, -3.0F, new Item.Properties().durability(32)));
+    public static final RegistryObject<Item> PLATINUM_AXE = ITEMS.register("platinum_axe",
+            () -> new AxeItem(ModToolTiers.PLATINUM, 5, -3.0F, new Item.Properties().durability(1000)));
 
     public static final RegistryObject<Item> INDIUM_SHOVEL = ITEMS.register("indium_shovel",
-            () -> new ShovelItem(ModToolTiers.INDIUM, 0, 3, new Item.Properties().durability(32)));
+            () -> new ShovelItem(ModToolTiers.INDIUM, 1.5F, -3.0F, new Item.Properties().durability(32)));
+    public static final RegistryObject<Item> PLATINUM_SHOVEL = ITEMS.register("platinum_shovel",
+            () -> new ShovelItem(ModToolTiers.PLATINUM, 2.5F, -3.0F, new Item.Properties().durability(1000)));
 
     public static final RegistryObject<Item> INDIUM_HOE = ITEMS.register("indium_hoe",
-            () -> new HoeItem(ModToolTiers.INDIUM, 0, 3, new Item.Properties().durability(32)));
+            () -> new HoeItem(ModToolTiers.INDIUM, -4, 0.0F, new Item.Properties().durability(32)));
+    public static final RegistryObject<Item> PLATINUM_HOE = ITEMS.register("platinum_hoe",
+            () -> new HoeItem(ModToolTiers.PLATINUM, -3, 0.0F, new Item.Properties().durability(32)));
 
     // Armor
     public static final RegistryObject<Item> INDIUM_HELMET = ITEMS.register("indium_helmet",
             () -> new ArmorItem(ModArmorMaterials.INDIUM, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> PLATINUM_HELMET = ITEMS.register("platinum_helmet",
+            () -> new ArmorItem(ModArmorMaterials.PLATINUM, ArmorItem.Type.HELMET, new Item.Properties()));
+
     public static final RegistryObject<Item> INDIUM_CHESTPLATE = ITEMS.register("indium_chestplate",
             () -> new ArmorItem(ModArmorMaterials.INDIUM, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<Item> PLATINUM_CHESTPLATE = ITEMS.register("platinum_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.PLATINUM, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+
     public static final RegistryObject<Item> INDIUM_LEGGINGS = ITEMS.register("indium_leggings",
             () -> new ArmorItem(ModArmorMaterials.INDIUM, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final RegistryObject<Item> PLATINUM_LEGGINGS = ITEMS.register("platinum_leggings",
+            () -> new ArmorItem(ModArmorMaterials.PLATINUM, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+
     public static final RegistryObject<Item> INDIUM_BOOTS = ITEMS.register("indium_boots",
             () -> new ArmorItem(ModArmorMaterials.INDIUM, ArmorItem.Type.BOOTS, new Item.Properties()));
+    public static final RegistryObject<Item> PLATINUM_BOOTS = ITEMS.register("platinum_boots",
+            () -> new ArmorItem(ModArmorMaterials.PLATINUM, ArmorItem.Type.BOOTS, new Item.Properties()));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
