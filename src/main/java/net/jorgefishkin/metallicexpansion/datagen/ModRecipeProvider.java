@@ -21,6 +21,8 @@ import java.util.function.Consumer;
 public class ModRecipeProvider extends RecipeProvider implements IConditionBuilder {
     private static final List<ItemLike> INDIUM_SMELTABLES = List.of(ModItems.RAW_INDIUM.get(), ModItems.INDIUM_DUST.get(), ModBlocks.INDIUM_ORE.get(), ModBlocks.DEEPSLATE_INDIUM_ORE.get(),
             ModBlocks.END_STONE_INDIUM_ORE.get());
+    private static final List<ItemLike> PLATINUM_SMELTABLES = List.of(ModItems.RAW_PLATINUM.get(), ModItems.PLATINUM_DUST.get(), ModBlocks.PLATINUM_ORE.get(), ModBlocks.DEEPSLATE_PLATINUM_ORE.get(),
+            ModBlocks.END_STONE_PLATINUM_ORE.get());
 
     public ModRecipeProvider(PackOutput pOutput) {
         super(pOutput);
@@ -116,24 +118,42 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('A', ModTags.Items.INDIUM_NUGGET)
                 .unlockedBy("has_indium_nugget", inventoryTrigger(ItemPredicate.Builder.item().of(ModItems.INDIUM_NUGGET.get()).build()))
                 .save(consumer, "metallicexpansion:indium_nugget_to_ingot");
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PLATINUM_INGOT.get())
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModTags.Items.PLATINUM_NUGGET)
+                .unlockedBy("has_platinum_nugget", inventoryTrigger(ItemPredicate.Builder.item().of(ModItems.INDIUM_NUGGET.get()).build()))
+                .save(consumer, "metallicexpansion:platinum_nugget_to_ingot");
 
         // Ingot to Nugget
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.INDIUM_NUGGET.get(), 9)
                 .requires(ModTags.Items.INDIUM_INGOT)
                 .unlockedBy("has_indium_ingot", inventoryTrigger(ItemPredicate.Builder.item().of(ModItems.INDIUM_INGOT.get()).build()))
                 .save(consumer, "metallicexpansion:indium_ingot_to_nugget");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.PLATINUM_NUGGET.get(), 9)
+                .requires(ModTags.Items.PLATINUM_INGOT)
+                .unlockedBy("has_platinum_ingot", inventoryTrigger(ItemPredicate.Builder.item().of(ModItems.INDIUM_INGOT.get()).build()))
+                .save(consumer, "metallicexpansion:platinum_ingot_to_nugget");
 
 
         // Storage Blocks
         nineBlockStorageRecipes(consumer, RecipeCategory.MISC, ModItems.INDIUM_INGOT.get(), RecipeCategory.MISC, ModBlocks.INDIUM_BLOCK.get(),
                 "metallicexpansion:indium_ingot", "indium", "metallicexpansion:indium_block", "indium");
+        nineBlockStorageRecipes(consumer, RecipeCategory.MISC, ModItems.PLATINUM_INGOT.get(), RecipeCategory.MISC, ModBlocks.PLATINUM_BLOCK.get(),
+                "metallicexpansion:platinum_ingot", "platinum", "metallicexpansion:platinum_block", "platinum");
+
         nineBlockStorageRecipes(consumer, RecipeCategory.MISC, ModItems.RAW_INDIUM.get(), RecipeCategory.MISC, ModBlocks.RAW_INDIUM_BLOCK.get(),
                 "metallicexpansion:raw_indium", "indium", "metallicexpansion:raw_indium_block", "indium");
+        nineBlockStorageRecipes(consumer, RecipeCategory.MISC, ModItems.RAW_PLATINUM.get(), RecipeCategory.MISC, ModBlocks.RAW_PLATINUM_BLOCK.get(),
+                "metallicexpansion:raw_platinum", "platinum", "metallicexpansion:raw_platinum_block", "platinum");
 
 
         // Smelting and Blasting
         oreSmelting(consumer, INDIUM_SMELTABLES, RecipeCategory.MISC, ModItems.INDIUM_INGOT.get(), 0.25f, 200, "indium");
         oreBlasting(consumer, INDIUM_SMELTABLES, RecipeCategory.MISC, ModItems.INDIUM_INGOT.get(), 0.25f, 100, "indium");
+        oreSmelting(consumer, PLATINUM_SMELTABLES, RecipeCategory.MISC, ModItems.PLATINUM_INGOT.get(), 0.35f, 200, "platinum");
+        oreBlasting(consumer, PLATINUM_SMELTABLES, RecipeCategory.MISC, ModItems.PLATINUM_INGOT.get(), 0.35f, 100, "platinum");
     }
 
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {

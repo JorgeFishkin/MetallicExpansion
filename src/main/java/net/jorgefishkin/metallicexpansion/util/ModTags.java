@@ -11,16 +11,22 @@ import net.minecraft.world.level.block.Block;
 public class ModTags {
     public static class Items{
         public static final TagKey<Item> INDIUM_INGOT = forgeTag("ingots/indium");
+        public static final TagKey<Item> PLATINUM_INGOT = forgeTag("ingots/platinum");
 
         public static final TagKey<Item> INDIUM_NUGGET = forgeTag("nuggets/indium");
+        public static final TagKey<Item> PLATINUM_NUGGET = forgeTag("nuggets/platinum");
 
         public static final TagKey<Item> INDIUM_DUST = forgeTag("dusts/indium");
+        public static final TagKey<Item> PLATINUM_DUST = forgeTag("dusts/platinum");
 
         public static final TagKey<Item> RAW_INDIUM = forgeTag("raw_materials/indium");
+        public static final TagKey<Item> RAW_PLATINUM = forgeTag("raw_materials/indium");
 
         public static final TagKey<Item> INDIUM_BLOCK = forgeTag("storage_blocks/indium");
-        public static final TagKey<Item> RAW_INDIUM_BLOCK = forgeTag("storage_blocks/raw_indium");
+        public static final TagKey<Item> PLATINUM_BLOCK = forgeTag("storage_blocks/platinum");
+
         public static final TagKey<Item> INDIUM_ORE = forgeTag("ores/indium");
+        public static final TagKey<Item> PLATINUM_ORE = forgeTag("ores/platinum");
 
         private static TagKey<Item> tag(String name){
             return ItemTags.create(new ResourceLocation(MetallicExpansionMod.MOD_ID, name));
@@ -33,8 +39,13 @@ public class ModTags {
 
     public static class Blocks{
         public static final TagKey<Block> INDIUM_BLOCK = forgeTag("storage_blocks/indium");
+        public static final TagKey<Block> PLATINUM_BLOCK = forgeTag("storage_blocks/platinum");
+
         public static final TagKey<Block> RAW_INDIUM_BLOCK = forgeTag("storage_blocks/raw_indium");
+        public static final TagKey<Block> RAW_PLATINUM_BLOCK = forgeTag("storage_blocks/raw_platinum");
+
         public static final TagKey<Block> INDIUM_ORE = forgeTag("ores/indium");
+        public static final TagKey<Block> PLATINUM_ORE = forgeTag("ores/platinum");
 
         private static TagKey<Block> tag(String name){
             return BlockTags.create(new ResourceLocation(MetallicExpansionMod.MOD_ID, name));

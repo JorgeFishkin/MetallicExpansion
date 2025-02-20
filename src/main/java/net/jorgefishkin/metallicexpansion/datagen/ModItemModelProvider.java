@@ -18,9 +18,16 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         simpleItem(ModItems.INDIUM_INGOT);
+        simpleItem(ModItems.PLATINUM_INGOT);
+
         simpleItem(ModItems.RAW_INDIUM);
+        simpleItem(ModItems.RAW_PLATINUM);
+
         simpleItem(ModItems.INDIUM_NUGGET);
+        simpleItem(ModItems.PLATINUM_NUGGET);
+
         simpleItem(ModItems.INDIUM_DUST);
+        simpleItem(ModItems.PLATINUM_DUST);
 
         handheldItem(ModItems.INDIUM_SWORD);
         handheldItem(ModItems.INDIUM_PICKAXE);

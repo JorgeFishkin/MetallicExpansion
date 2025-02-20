@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "platinum",
+  "key": {
+    "#": {
+      "item": "metallicexpansion:platinum_ingot"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "metallicexpansion:platinum_block"
+  },
+  "show_notification": true
+}

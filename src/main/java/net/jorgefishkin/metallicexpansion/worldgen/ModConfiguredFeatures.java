@@ -20,7 +20,10 @@ import java.util.List;
 
 public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_INDIUM_ORE_KEY = registerKey("indium_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_PLATINUM_ORE_KEY = registerKey("platinum_ore");
+
     public static final ResourceKey<ConfiguredFeature<?, ?>> END_INDIUM_ORE_KEY = registerKey("end_indium_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> END_PLATINUM_ORE_KEY = registerKey("end_platinum_ore");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context){
 
@@ -31,9 +34,14 @@ public class ModConfiguredFeatures {
 
         List<OreConfiguration.TargetBlockState> overworldIndiumOres = List.of(OreConfiguration.target(stoneReplaceables, ModBlocks.INDIUM_ORE.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceables, ModBlocks.DEEPSLATE_INDIUM_ORE.get().defaultBlockState()));
+        List<OreConfiguration.TargetBlockState> overworldPlatinumOres = List.of(OreConfiguration.target(stoneReplaceables, ModBlocks.PLATINUM_ORE.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceables, ModBlocks.DEEPSLATE_PLATINUM_ORE.get().defaultBlockState()));
 
         register(context, OVERWORLD_INDIUM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldIndiumOres, 5));
+        register(context, OVERWORLD_PLATINUM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldPlatinumOres, 4));
+
         register(context, END_INDIUM_ORE_KEY, Feature.ORE, new OreConfiguration(endStoneReplaceables, ModBlocks.END_STONE_INDIUM_ORE.get().defaultBlockState(), 7));
+        register(context, END_PLATINUM_ORE_KEY, Feature.ORE, new OreConfiguration(endStoneReplaceables, ModBlocks.END_STONE_PLATINUM_ORE.get().defaultBlockState(), 5));
 
     }
 

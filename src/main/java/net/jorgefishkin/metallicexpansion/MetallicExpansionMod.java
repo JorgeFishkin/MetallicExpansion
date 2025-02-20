@@ -58,6 +58,13 @@ public class MetallicExpansionMod
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.INDIUM_INGOT);
             event.accept(ModItems.RAW_INDIUM);
+            event.accept(ModItems.INDIUM_NUGGET);
+            event.accept(ModItems.INDIUM_DUST);
+
+            event.accept(ModItems.PLATINUM_INGOT);
+            event.accept(ModItems.RAW_PLATINUM);
+            event.accept(ModItems.PLATINUM_NUGGET);
+            event.accept(ModItems.PLATINUM_DUST);
         }
 
         if(event.getTabKey() == CreativeModeTabs.COMBAT){
@@ -80,10 +87,15 @@ public class MetallicExpansionMod
             event.accept(ModBlocks.DEEPSLATE_INDIUM_ORE);
             event.accept(ModBlocks.END_STONE_INDIUM_ORE);
             event.accept(ModBlocks.RAW_INDIUM_BLOCK);
+            event.accept(ModBlocks.PLATINUM_ORE);
+            event.accept(ModBlocks.DEEPSLATE_PLATINUM_ORE);
+            event.accept(ModBlocks.END_STONE_PLATINUM_ORE);
+            event.accept(ModBlocks.RAW_PLATINUM_BLOCK);
         }
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
             event.accept(ModBlocks.INDIUM_BLOCK);
+            event.accept(ModBlocks.PLATINUM_BLOCK);
 
 
         }

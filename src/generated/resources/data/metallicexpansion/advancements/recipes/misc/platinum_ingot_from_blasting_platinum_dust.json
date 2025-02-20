@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_platinum_dust": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "metallicexpansion:platinum_dust"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "metallicexpansion:platinum_ingot_from_blasting_platinum_dust"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_platinum_dust",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "metallicexpansion:platinum_ingot_from_blasting_platinum_dust"
+    ]
+  },
+  "sends_telemetry_event": false
+}

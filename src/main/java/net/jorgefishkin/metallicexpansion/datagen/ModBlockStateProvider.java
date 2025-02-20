@@ -16,10 +16,15 @@ public class ModBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         blockWithItem(ModBlocks.INDIUM_BLOCK);
+        blockWithItem(ModBlocks.PLATINUM_BLOCK);
         blockWithItem(ModBlocks.RAW_INDIUM_BLOCK);
+        blockWithItem(ModBlocks.RAW_PLATINUM_BLOCK);
         blockWithItem(ModBlocks.INDIUM_ORE);
+        blockWithItem(ModBlocks.PLATINUM_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_INDIUM_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_PLATINUM_ORE);
         blockWithItem(ModBlocks.END_STONE_INDIUM_ORE);
+        blockWithItem(ModBlocks.END_STONE_PLATINUM_ORE);
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject){

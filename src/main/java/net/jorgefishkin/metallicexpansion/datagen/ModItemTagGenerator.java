@@ -23,19 +23,28 @@ public class ModItemTagGenerator extends ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         this.tag(ModTags.Items.INDIUM_INGOT).add(ModItems.INDIUM_INGOT.get());
+        this.tag(ModTags.Items.PLATINUM_INGOT).add(ModItems.PLATINUM_INGOT.get());
 
         this.tag(ModTags.Items.INDIUM_NUGGET).add(ModItems.INDIUM_NUGGET.get());
+        this.tag(ModTags.Items.PLATINUM_NUGGET).add(ModItems.PLATINUM_NUGGET.get());
 
         this.tag(ModTags.Items.INDIUM_DUST).add(ModItems.INDIUM_DUST.get());
+        this.tag(ModTags.Items.PLATINUM_DUST).add(ModItems.PLATINUM_DUST.get());
 
         this.tag(ModTags.Items.RAW_INDIUM).add(ModItems.RAW_INDIUM.get());
+        this.tag(ModTags.Items.RAW_PLATINUM).add(ModItems.RAW_PLATINUM.get());
 
         this.tag(ModTags.Items.INDIUM_BLOCK).add(ModBlocks.INDIUM_BLOCK.get().asItem())
                 .add(ModBlocks.RAW_INDIUM_BLOCK.get().asItem());
+        this.tag(ModTags.Items.PLATINUM_BLOCK).add(ModBlocks.PLATINUM_BLOCK.get().asItem())
+                .add(ModBlocks.RAW_PLATINUM_BLOCK.get().asItem());
 
         this.tag(ModTags.Items.INDIUM_ORE).add(ModBlocks.INDIUM_ORE.get().asItem())
                 .add(ModBlocks.DEEPSLATE_INDIUM_ORE.get().asItem())
                 .add(ModBlocks.END_STONE_INDIUM_ORE.get().asItem());
+        this.tag(ModTags.Items.PLATINUM_ORE).add(ModBlocks.PLATINUM_ORE.get().asItem())
+                .add(ModBlocks.DEEPSLATE_PLATINUM_ORE.get().asItem())
+                .add(ModBlocks.END_STONE_PLATINUM_ORE.get().asItem());
 
     }
 

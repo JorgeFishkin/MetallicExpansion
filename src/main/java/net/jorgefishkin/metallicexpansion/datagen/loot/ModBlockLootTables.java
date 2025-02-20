@@ -18,14 +18,25 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     @Override
     protected void generate() {
         this.dropSelf(ModBlocks.INDIUM_BLOCK.get());
+        this.dropSelf(ModBlocks.PLATINUM_BLOCK.get());
+
         this.dropSelf(ModBlocks.RAW_INDIUM_BLOCK.get());
+        this.dropSelf(ModBlocks.RAW_PLATINUM_BLOCK.get());
 
         this.add(ModBlocks.INDIUM_ORE.get(),
                 block -> createOreDrop(ModBlocks.INDIUM_ORE.get(), ModItems.RAW_INDIUM.get()));
+        this.add(ModBlocks.PLATINUM_ORE.get(),
+                block -> createOreDrop(ModBlocks.PLATINUM_ORE.get(), ModItems.RAW_PLATINUM.get()));
+
         this.add(ModBlocks.DEEPSLATE_INDIUM_ORE.get(),
                 block -> createOreDrop(ModBlocks.DEEPSLATE_INDIUM_ORE.get(), ModItems.RAW_INDIUM.get()));
+        this.add(ModBlocks.DEEPSLATE_PLATINUM_ORE.get(),
+                block -> createOreDrop(ModBlocks.DEEPSLATE_PLATINUM_ORE.get(), ModItems.RAW_PLATINUM.get()));
+
         this.add(ModBlocks.END_STONE_INDIUM_ORE.get(),
                 block -> createOreDrop(ModBlocks.END_STONE_INDIUM_ORE.get(), ModItems.RAW_INDIUM.get()));
+        this.add(ModBlocks.END_STONE_PLATINUM_ORE.get(),
+                block -> createOreDrop(ModBlocks.END_STONE_PLATINUM_ORE.get(), ModItems.RAW_PLATINUM.get()));
 
     }
 
