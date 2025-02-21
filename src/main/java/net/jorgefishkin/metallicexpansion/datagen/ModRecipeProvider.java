@@ -23,6 +23,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             ModBlocks.END_STONE_INDIUM_ORE.get());
     private static final List<ItemLike> PLATINUM_SMELTABLES = List.of(ModItems.RAW_PLATINUM.get(), ModItems.PLATINUM_DUST.get(), ModBlocks.PLATINUM_ORE.get(), ModBlocks.DEEPSLATE_PLATINUM_ORE.get(),
             ModBlocks.END_STONE_PLATINUM_ORE.get());
+    private static final List<ItemLike> CADMIUM_SMELTABLES = List.of(ModItems.RAW_CADMIUM.get(), ModItems.CADMIUM_DUST.get(), ModBlocks.CADMIUM_ORE.get(), ModBlocks.DEEPSLATE_CADMIUM_ORE.get(),
+            ModBlocks.NETHERRACK_CADMIUM_ORE.get());
 
     public ModRecipeProvider(PackOutput pOutput) {
         super(pOutput);

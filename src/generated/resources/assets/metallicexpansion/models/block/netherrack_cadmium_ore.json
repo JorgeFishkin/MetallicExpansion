@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "metallicexpansion:block/netherrack_cadmium_ore"
+  }
+}

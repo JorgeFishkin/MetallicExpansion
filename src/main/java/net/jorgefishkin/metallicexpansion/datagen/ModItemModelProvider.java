@@ -19,15 +19,19 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         simpleItem(ModItems.INDIUM_INGOT);
         simpleItem(ModItems.PLATINUM_INGOT);
+        simpleItem(ModItems.CADMIUM_INGOT);
 
         simpleItem(ModItems.RAW_INDIUM);
         simpleItem(ModItems.RAW_PLATINUM);
+        simpleItem(ModItems.RAW_CADMIUM);
 
         simpleItem(ModItems.INDIUM_NUGGET);
         simpleItem(ModItems.PLATINUM_NUGGET);
+        simpleItem(ModItems.CADMIUM_NUGGET);
 
         simpleItem(ModItems.INDIUM_DUST);
         simpleItem(ModItems.PLATINUM_DUST);
+        simpleItem(ModItems.CADMIUM_DUST);
 
         handheldItem(ModItems.INDIUM_SWORD);
         handheldItem(ModItems.INDIUM_PICKAXE);

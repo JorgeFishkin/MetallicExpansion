@@ -27,24 +27,36 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.GOLD_BLOCK).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> PLATINUM_BLOCK = registerBlock("platinum_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> CADMIUM_BLOCK = registerBlock("cadmium_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK).requiresCorrectToolForDrops()));
 
     // Raw Blocks
     public static final RegistryObject<Block> RAW_INDIUM_BLOCK = registerBlock("raw_indium_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.RAW_GOLD_BLOCK).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> RAW_PLATINUM_BLOCK = registerBlock("raw_platinum_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.RAW_IRON_BLOCK).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> RAW_CADMIUM_BLOCK = registerBlock("raw_cadmium_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.RAW_COPPER_BLOCK).requiresCorrectToolForDrops()));
 
     // Ore
     public static final RegistryObject<Block> INDIUM_ORE = registerBlock("indium_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.GOLD_ORE).requiresCorrectToolForDrops(), UniformInt.of(2, 5)));
     public static final RegistryObject<Block> PLATINUM_ORE = registerBlock("platinum_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).requiresCorrectToolForDrops(), UniformInt.of(4, 6)));
+    public static final RegistryObject<Block> CADMIUM_ORE = registerBlock("cadmium_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_ORE).requiresCorrectToolForDrops(), UniformInt.of(1, 2)));
 
     //Deepslate Ore
     public static final RegistryObject<Block> DEEPSLATE_INDIUM_ORE = registerBlock("deepslate_indium_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_GOLD_ORE).requiresCorrectToolForDrops(), UniformInt.of(3, 6)));
     public static final RegistryObject<Block> DEEPSLATE_PLATINUM_ORE = registerBlock("deepslate_platinum_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE).requiresCorrectToolForDrops(), UniformInt.of(4, 7)));
+    public static final RegistryObject<Block> DEEPSLATE_CADMIUM_ORE = registerBlock("deepslate_cadmium_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_COPPER_ORE).requiresCorrectToolForDrops(), UniformInt.of(1, 3)));
+
+    // Netherrack Ore
+    public static final RegistryObject<Block> NETHERRACK_CADMIUM_ORE = registerBlock("netherrack_cadmium_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_GOLD_ORE).requiresCorrectToolForDrops(), UniformInt.of(2, 3)));
 
     // End Stone Ore
     public static final RegistryObject<Block> END_STONE_INDIUM_ORE = registerBlock("end_stone_indium_ore",

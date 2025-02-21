@@ -9,6 +9,11 @@
   "item.metallicexpansion.platinum_nugget" : "Platinum Nugget",
   "item.metallicexpansion.platinum_dust" : "Platinum Dust",
 
+  "item.metallicexpansion.cadmium_ingot" : "Cadmium Ingot",
+  "item.metallicexpansion.raw_cadmium" : "Raw Cadmium",
+  "item.metallicexpansion.cadmium_nugget" : "Cadmium Nugget",
+  "item.metallicexpansion.cadmium_dust" : "Cadmium Dust",
+
   "item.metallicexpansion.indium_sword" : "Indium Sword",
   "item.metallicexpansion.indium_pickaxe" : "Indium Pickaxe",
   "item.metallicexpansion.indium_axe" : "Indium Axe",
@@ -39,9 +44,15 @@
 
   "block.metallicexpansion.platinum_block" : "Platinum Block",
   "block.metallicexpansion.raw_platinum_block" : "Block of Raw Platinum",
-  "block.metallicexpansion.platinum_ore" : "Platinum Ore",
-  "block.metallicexpansion.deepslate_platinum_ore" : "Deepslate Platinum Ore",
-  "block.metallicexpansion.end_stone_platinum_ore" : "End Stone Platinum Ore",
+  "block.metallicexpansion.platinum_ore" : "Platine Ore",
+  "block.metallicexpansion.deepslate_platinum_ore" : "Deepslate Platine Ore",
+  "block.metallicexpansion.end_stone_platinum_ore" : "End Stone Platine Ore",
+
+  "block.metallicexpansion.cadmium_block" : "Cadmium Block",
+  "block.metallicexpansion.raw_cadmium_block" : "Block of Raw Cadmium",
+  "block.metallicexpansion.cadmium_ore" : "Cadmium Ore",
+  "block.metallicexpansion.deepslate_cadmium_ore" : "Deepslate Cadmium Ore",
+  "block.metallicexpansion.netherrack_cadmium_ore" : "Netherrack Cadmium Ore",
 
   "creativetab.metallicexpansion_tab" : "Metallic Expansion"
 }

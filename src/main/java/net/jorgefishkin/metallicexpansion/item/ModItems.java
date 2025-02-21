@@ -16,11 +16,15 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> PLATINUM_INGOT = ITEMS.register("platinum_ingot",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CADMIUM_INGOT = ITEMS.register("cadmium_ingot",
+            () -> new Item(new Item.Properties()));
 
     // Raw
     public static final RegistryObject<Item> RAW_INDIUM = ITEMS.register("raw_indium",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAW_PLATINUM = ITEMS.register("raw_platinum",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RAW_CADMIUM = ITEMS.register("raw_cadmium",
             () -> new Item(new Item.Properties()));
 
     // Nuggets
@@ -28,11 +32,15 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> PLATINUM_NUGGET = ITEMS.register("platinum_nugget",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CADMIUM_NUGGET = ITEMS.register("cadmium_nugget",
+            () -> new Item(new Item.Properties()));
 
     // Dust
     public static final RegistryObject<Item> INDIUM_DUST = ITEMS.register("indium_dust",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> PLATINUM_DUST = ITEMS.register("platinum_dust",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CADMIUM_DUST = ITEMS.register("cadmium_dust",
             () -> new Item(new Item.Properties()));
 
     // Tools

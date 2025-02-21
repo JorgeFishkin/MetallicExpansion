@@ -65,6 +65,11 @@ public class MetallicExpansionMod
             event.accept(ModItems.RAW_PLATINUM);
             event.accept(ModItems.PLATINUM_NUGGET);
             event.accept(ModItems.PLATINUM_DUST);
+
+            event.accept(ModItems.CADMIUM_INGOT);
+            event.accept(ModItems.RAW_CADMIUM);
+            event.accept(ModItems.CADMIUM_NUGGET);
+            event.accept(ModItems.CADMIUM_DUST);
         }
 
         if(event.getTabKey() == CreativeModeTabs.COMBAT){

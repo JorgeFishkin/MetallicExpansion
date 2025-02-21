@@ -30,6 +30,11 @@ public class ModCreativeModeTabs {
                 output.accept(ModItems.PLATINUM_NUGGET.get());
                 output.accept(ModItems.PLATINUM_DUST.get());
 
+                output.accept(ModItems.RAW_CADMIUM.get());
+                output.accept(ModItems.CADMIUM_INGOT.get());
+                output.accept(ModItems.CADMIUM_NUGGET.get());
+                output.accept(ModItems.CADMIUM_DUST.get());
+
 
                 output.accept(ModItems.INDIUM_SWORD.get());
                 output.accept(ModItems.INDIUM_PICKAXE.get());
@@ -66,5 +71,11 @@ public class ModCreativeModeTabs {
                 output.accept(ModBlocks.PLATINUM_ORE.get());
                 output.accept(ModBlocks.DEEPSLATE_PLATINUM_ORE.get());
                 output.accept(ModBlocks.END_STONE_PLATINUM_ORE.get());
+
+                output.accept(ModBlocks.CADMIUM_BLOCK.get());
+                output.accept(ModBlocks.RAW_CADMIUM_BLOCK.get());
+                output.accept(ModBlocks.CADMIUM_ORE.get());
+                output.accept(ModBlocks.DEEPSLATE_CADMIUM_ORE.get());
+                output.accept(ModBlocks.NETHERRACK_CADMIUM_ORE.get());
             }).build());
 }
