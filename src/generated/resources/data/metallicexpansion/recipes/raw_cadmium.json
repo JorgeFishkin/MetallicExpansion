@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "cadmium",
+  "key": {
+    "#": {
+      "item": "metallicexpansion:raw_cadmium"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "metallicexpansion:raw_cadmium_block"
+  },
+  "show_notification": true
+}

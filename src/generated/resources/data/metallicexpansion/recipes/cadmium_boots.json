@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": {
+      "tag": "forge:ingots/cadmium"
+    }
+  },
+  "pattern": [
+    "   ",
+    "I I",
+    "I I"
+  ],
+  "result": {
+    "item": "metallicexpansion:cadmium_boots"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.15,
+  "group": "cadmium",
+  "ingredient": {
+    "item": "metallicexpansion:netherrack_cadmium_ore"
+  },
+  "result": "metallicexpansion:cadmium_ingot"
+}

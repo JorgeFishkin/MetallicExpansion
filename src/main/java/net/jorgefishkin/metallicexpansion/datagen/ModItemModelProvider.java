@@ -45,6 +45,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.PLATINUM_SHOVEL);
         handheldItem(ModItems.PLATINUM_HOE);
 
+        handheldItem(ModItems.CADMIUM_SWORD);
+        handheldItem(ModItems.CADMIUM_PICKAXE);
+        handheldItem(ModItems.CADMIUM_AXE);
+        handheldItem(ModItems.CADMIUM_SHOVEL);
+        handheldItem(ModItems.CADMIUM_HOE);
+
         simpleItem(ModItems.INDIUM_HELMET);
         simpleItem(ModItems.INDIUM_CHESTPLATE);
         simpleItem(ModItems.INDIUM_LEGGINGS);
@@ -54,6 +60,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.PLATINUM_CHESTPLATE);
         simpleItem(ModItems.PLATINUM_LEGGINGS);
         simpleItem(ModItems.PLATINUM_BOOTS);
+
+        simpleItem(ModItems.CADMIUM_HELMET);
+        simpleItem(ModItems.CADMIUM_CHESTPLATE);
+        simpleItem(ModItems.CADMIUM_LEGGINGS);
+        simpleItem(ModItems.CADMIUM_BOOTS);
 
 
     }

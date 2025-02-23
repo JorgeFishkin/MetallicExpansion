@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.15,
+  "group": "cadmium",
+  "ingredient": {
+    "item": "metallicexpansion:cadmium_ore"
+  },
+  "result": "metallicexpansion:cadmium_ingot"
+}

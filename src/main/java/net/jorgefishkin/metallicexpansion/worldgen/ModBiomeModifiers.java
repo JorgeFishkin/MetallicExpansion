@@ -15,6 +15,9 @@ import net.minecraftforge.registries.ForgeRegistries;
 public class ModBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_INDIUM_ORE = registerKey("add_indium_ore");
     public static final ResourceKey<BiomeModifier> ADD_PLATINUM_ORE = registerKey("add_platinum_ore");
+    public static final ResourceKey<BiomeModifier> ADD_CADMIUM_ORE = registerKey("add_cadmium_ore");
+
+    public static final ResourceKey<BiomeModifier> ADD_NETHER_CADMIUM_ORE = registerKey("add_nether_cadmium_ore");
 
     public static final ResourceKey<BiomeModifier> ADD_END_INDIUM_ORE = registerKey("add_end_indium_ore");
     public static final ResourceKey<BiomeModifier> ADD_END_PLATINUM_ORE = registerKey("add_end_platinum_ore");
@@ -30,6 +33,15 @@ public class ModBiomeModifiers {
         context.register(ADD_PLATINUM_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.PLATINUM_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+        context.register(ADD_CADMIUM_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.CADMIUM_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_NETHER_CADMIUM_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_NETHER),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.NETHER_CADMIUM_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
         context.register(ADD_END_INDIUM_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(

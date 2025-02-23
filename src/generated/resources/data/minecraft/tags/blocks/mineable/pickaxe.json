@@ -9,6 +9,11 @@
     "metallicexpansion:raw_platinum_block",
     "metallicexpansion:platinum_ore",
     "metallicexpansion:deepslate_platinum_ore",
-    "metallicexpansion:end_stone_platinum_ore"
+    "metallicexpansion:end_stone_platinum_ore",
+    "metallicexpansion:cadmium_block",
+    "metallicexpansion:raw_cadmium_block",
+    "metallicexpansion:cadmium_ore",
+    "metallicexpansion:deepslate_cadmium_ore",
+    "metallicexpansion:netherrack_cadmium_ore"
   ]
 }

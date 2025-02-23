@@ -18,6 +18,9 @@ import java.util.List;
 public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> INDIUM_ORE_PLACED_KEY = registerKey("indium_ore_placed");
     public static final ResourceKey<PlacedFeature> PLATINUM_ORE_PLACED_KEY = registerKey("platinum_ore_placed");
+    public static final ResourceKey<PlacedFeature> CADMIUM_ORE_PLACED_KEY = registerKey("cadmium_ore_placed");
+
+    public static final ResourceKey<PlacedFeature> NETHER_CADMIUM_ORE_PLACED_KEY = registerKey("nether_cadmium_ore_placed");
 
     public static final ResourceKey<PlacedFeature> END_INDIUM_ORE_PLACED_KEY = registerKey("end_indium_ore_placed");
     public static final ResourceKey<PlacedFeature> END_PLATINUM_ORE_PLACED_KEY = registerKey("end_platinum_ore_placed");
@@ -31,6 +34,13 @@ public class ModPlacedFeatures {
         register(context, PLATINUM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_PLATINUM_ORE_KEY),
                 ModOrePlacement.commonOrePlacement(7,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(25))));
+        register(context, CADMIUM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_CADMIUM_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(13,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(60))));
+
+        register(context, NETHER_CADMIUM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_CADMIUM_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(14,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(128))));
 
         register(context, END_INDIUM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.END_INDIUM_ORE_KEY),
                 ModOrePlacement.commonOrePlacement(7,

@@ -26,6 +26,12 @@
   "item.metallicexpansion.platinum_shovel" : "Platinum Shovel",
   "item.metallicexpansion.platinum_hoe" : "Platinum Hoe",
 
+  "item.metallicexpansion.cadmium_sword" : "Cadmium Sword",
+  "item.metallicexpansion.cadmium_pickaxe" : "Cadmium Pickaxe",
+  "item.metallicexpansion.cadmium_axe" : "Cadmium Axe",
+  "item.metallicexpansion.cadmium_shovel" : "Cadmium Shovel",
+  "item.metallicexpansion.cadmium_hoe" : "Cadmium Hoe",
+
   "item.metallicexpansion.indium_helmet" : "Indium Helmet",
   "item.metallicexpansion.indium_chestplate" : "Indium Chestplate",
   "item.metallicexpansion.indium_leggings" : "Indium Leggings",
@@ -35,6 +41,11 @@
   "item.metallicexpansion.platinum_chestplate" : "Platinum Chestplate",
   "item.metallicexpansion.platinum_leggings" : "Platinum Leggings",
   "item.metallicexpansion.platinum_boots" : "Platinum Boots",
+
+  "item.metallicexpansion.cadmium_helmet" : "Cadmium Helmet",
+  "item.metallicexpansion.cadmium_chestplate" : "Cadmium Chestplate",
+  "item.metallicexpansion.cadmium_leggings" : "Cadmium Leggings",
+  "item.metallicexpansion.cadmium_boots" : "Cadmium Boots",
 
   "block.metallicexpansion.indium_block" : "Indium Block",
   "block.metallicexpansion.raw_indium_block" : "Block of Raw Indium",

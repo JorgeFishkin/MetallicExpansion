@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "cadmium",
+  "ingredients": [
+    {
+      "item": "metallicexpansion:cadmium_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "metallicexpansion:cadmium_ingot"
+  }
+}

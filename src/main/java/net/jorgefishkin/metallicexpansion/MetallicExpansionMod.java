@@ -84,6 +84,13 @@ public class MetallicExpansionMod
             event.accept(ModItems.PLATINUM_CHESTPLATE);
             event.accept(ModItems.PLATINUM_LEGGINGS);
             event.accept(ModItems.PLATINUM_BOOTS);
+
+            event.accept(ModItems.CADMIUM_SWORD.get());
+            event.accept(ModItems.CADMIUM_HELMET);
+            event.accept(ModItems.CADMIUM_CHESTPLATE);
+            event.accept(ModItems.CADMIUM_LEGGINGS);
+            event.accept(ModItems.CADMIUM_BOOTS);
+
         }
 
         if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES){
@@ -96,6 +103,11 @@ public class MetallicExpansionMod
             event.accept(ModItems.PLATINUM_PICKAXE);
             event.accept(ModItems.PLATINUM_AXE);
             event.accept(ModItems.PLATINUM_HOE);
+
+            event.accept(ModItems.CADMIUM_SHOVEL.get());
+            event.accept(ModItems.CADMIUM_PICKAXE.get());
+            event.accept(ModItems.CADMIUM_AXE.get());
+            event.accept(ModItems.CADMIUM_HOE.get());
         }
 
         if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS){
@@ -108,11 +120,17 @@ public class MetallicExpansionMod
             event.accept(ModBlocks.DEEPSLATE_PLATINUM_ORE);
             event.accept(ModBlocks.END_STONE_PLATINUM_ORE);
             event.accept(ModBlocks.RAW_PLATINUM_BLOCK);
+
+            event.accept(ModBlocks.CADMIUM_ORE);
+            event.accept(ModBlocks.DEEPSLATE_CADMIUM_ORE);
+            event.accept(ModBlocks.NETHERRACK_CADMIUM_ORE);
+            event.accept(ModBlocks.RAW_CADMIUM_BLOCK);
         }
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
             event.accept(ModBlocks.INDIUM_BLOCK);
             event.accept(ModBlocks.PLATINUM_BLOCK);
+            event.accept(ModBlocks.CADMIUM_BLOCK);
 
 
         }

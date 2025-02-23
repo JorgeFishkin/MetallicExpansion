@@ -48,6 +48,12 @@ public class ModCreativeModeTabs {
                 output.accept(ModItems.PLATINUM_SHOVEL.get());
                 output.accept(ModItems.PLATINUM_HOE.get());
 
+                output.accept(ModItems.CADMIUM_SWORD.get());
+                output.accept(ModItems.CADMIUM_PICKAXE.get());
+                output.accept(ModItems.CADMIUM_AXE.get());
+                output.accept(ModItems.CADMIUM_SHOVEL.get());
+                output.accept(ModItems.CADMIUM_HOE.get());
+
 
                 output.accept(ModItems.INDIUM_HELMET.get());
                 output.accept(ModItems.INDIUM_CHESTPLATE.get());
@@ -58,6 +64,11 @@ public class ModCreativeModeTabs {
                 output.accept(ModItems.PLATINUM_CHESTPLATE.get());
                 output.accept(ModItems.PLATINUM_LEGGINGS.get());
                 output.accept(ModItems.PLATINUM_BOOTS.get());
+
+                output.accept(ModItems.CADMIUM_HELMET.get());
+                output.accept(ModItems.CADMIUM_CHESTPLATE.get());
+                output.accept(ModItems.CADMIUM_LEGGINGS.get());
+                output.accept(ModItems.CADMIUM_BOOTS.get());
 
 
                 output.accept(ModBlocks.INDIUM_BLOCK.get());

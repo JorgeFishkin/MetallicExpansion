@@ -21,6 +21,9 @@ import java.util.List;
 public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_INDIUM_ORE_KEY = registerKey("indium_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_PLATINUM_ORE_KEY = registerKey("platinum_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_CADMIUM_ORE_KEY = registerKey("cadmium_ore");
+
+    public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_CADMIUM_ORE_KEY = registerKey("nether_cadmium_ore");
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> END_INDIUM_ORE_KEY = registerKey("end_indium_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> END_PLATINUM_ORE_KEY = registerKey("end_platinum_ore");
@@ -36,9 +39,14 @@ public class ModConfiguredFeatures {
                 OreConfiguration.target(deepslateReplaceables, ModBlocks.DEEPSLATE_INDIUM_ORE.get().defaultBlockState()));
         List<OreConfiguration.TargetBlockState> overworldPlatinumOres = List.of(OreConfiguration.target(stoneReplaceables, ModBlocks.PLATINUM_ORE.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceables, ModBlocks.DEEPSLATE_PLATINUM_ORE.get().defaultBlockState()));
+        List<OreConfiguration.TargetBlockState> overworldCadmiumOres = List.of(OreConfiguration.target(stoneReplaceables, ModBlocks.CADMIUM_ORE.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceables, ModBlocks.DEEPSLATE_CADMIUM_ORE.get().defaultBlockState()));
 
         register(context, OVERWORLD_INDIUM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldIndiumOres, 5));
         register(context, OVERWORLD_PLATINUM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldPlatinumOres, 4));
+        register(context, OVERWORLD_CADMIUM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldCadmiumOres, 6));
+
+        register(context, NETHER_CADMIUM_ORE_KEY, Feature.ORE, new OreConfiguration(netherrackReplaceables, ModBlocks.NETHERRACK_CADMIUM_ORE.get().defaultBlockState(), 6));
 
         register(context, END_INDIUM_ORE_KEY, Feature.ORE, new OreConfiguration(endStoneReplaceables, ModBlocks.END_STONE_INDIUM_ORE.get().defaultBlockState(), 7));
         register(context, END_PLATINUM_ORE_KEY, Feature.ORE, new OreConfiguration(endStoneReplaceables, ModBlocks.END_STONE_PLATINUM_ORE.get().defaultBlockState(), 5));

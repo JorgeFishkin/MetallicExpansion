@@ -24,20 +24,26 @@ public class ModItemTagGenerator extends ItemTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
         this.tag(ModTags.Items.INDIUM_INGOT).add(ModItems.INDIUM_INGOT.get());
         this.tag(ModTags.Items.PLATINUM_INGOT).add(ModItems.PLATINUM_INGOT.get());
+        this.tag(ModTags.Items.CADMIUM_INGOT).add(ModItems.CADMIUM_INGOT.get());
 
         this.tag(ModTags.Items.INDIUM_NUGGET).add(ModItems.INDIUM_NUGGET.get());
         this.tag(ModTags.Items.PLATINUM_NUGGET).add(ModItems.PLATINUM_NUGGET.get());
+        this.tag(ModTags.Items.CADMIUM_NUGGET).add(ModItems.CADMIUM_NUGGET.get());
 
         this.tag(ModTags.Items.INDIUM_DUST).add(ModItems.INDIUM_DUST.get());
         this.tag(ModTags.Items.PLATINUM_DUST).add(ModItems.PLATINUM_DUST.get());
+        this.tag(ModTags.Items.CADMIUM_DUST).add(ModItems.CADMIUM_DUST.get());
 
         this.tag(ModTags.Items.RAW_INDIUM).add(ModItems.RAW_INDIUM.get());
         this.tag(ModTags.Items.RAW_PLATINUM).add(ModItems.RAW_PLATINUM.get());
+        this.tag(ModTags.Items.RAW_CADMIUM).add(ModItems.RAW_CADMIUM.get());
 
         this.tag(ModTags.Items.INDIUM_BLOCK).add(ModBlocks.INDIUM_BLOCK.get().asItem())
                 .add(ModBlocks.RAW_INDIUM_BLOCK.get().asItem());
         this.tag(ModTags.Items.PLATINUM_BLOCK).add(ModBlocks.PLATINUM_BLOCK.get().asItem())
                 .add(ModBlocks.RAW_PLATINUM_BLOCK.get().asItem());
+        this.tag(ModTags.Items.CADMIUM_BLOCK).add(ModBlocks.CADMIUM_BLOCK.get().asItem())
+                .add(ModBlocks.RAW_CADMIUM_BLOCK.get().asItem());
 
         this.tag(ModTags.Items.INDIUM_ORE).add(ModBlocks.INDIUM_ORE.get().asItem())
                 .add(ModBlocks.DEEPSLATE_INDIUM_ORE.get().asItem())
@@ -45,6 +51,9 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         this.tag(ModTags.Items.PLATINUM_ORE).add(ModBlocks.PLATINUM_ORE.get().asItem())
                 .add(ModBlocks.DEEPSLATE_PLATINUM_ORE.get().asItem())
                 .add(ModBlocks.END_STONE_PLATINUM_ORE.get().asItem());
+        this.tag(ModTags.Items.CADMIUM_ORE).add(ModBlocks.CADMIUM_ORE.get().asItem())
+                .add(ModBlocks.DEEPSLATE_CADMIUM_ORE.get().asItem())
+                .add(ModBlocks.NETHERRACK_CADMIUM_ORE.get().asItem());
 
     }
 
