@@ -1,16 +1,15 @@
 package net.jorgefishkin.metallicexpansion.datagen;
 
-import net.jorgefishkin.metallicexpansion.MetallicExpansionMod;
+import net.jorgefishkin.metallicexpansion.MetallicExpansion;
 import net.jorgefishkin.metallicexpansion.block.ModBlocks;
 import net.minecraft.data.PackOutput;
-import net.minecraft.world.level.block.Block;
-import net.minecraftforge.client.model.generators.BlockStateProvider;
-import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.registries.RegistryObject;
+import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
+import net.neoforged.neoforge.common.data.ExistingFileHelper;
+import net.neoforged.neoforge.registries.DeferredBlock;
 
 public class ModBlockStateProvider extends BlockStateProvider {
     public ModBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
-        super(output, MetallicExpansionMod.MOD_ID, exFileHelper);
+        super(output, MetallicExpansion.MODID, exFileHelper);
     }
 
     @Override
@@ -37,7 +36,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.END_STONE_PLATINUM_ORE);
     }
 
-    private void blockWithItem(RegistryObject<Block> blockRegistryObject){
-        simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
+    private void blockWithItem(DeferredBlock<?> deferredBlock){
+        simpleBlockWithItem(deferredBlock.get(), cubeAll(deferredBlock.get()));
     }
 }

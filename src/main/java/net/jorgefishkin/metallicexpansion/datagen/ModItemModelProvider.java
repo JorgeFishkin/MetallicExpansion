@@ -1,87 +1,72 @@
 package net.jorgefishkin.metallicexpansion.datagen;
 
-import net.jorgefishkin.metallicexpansion.MetallicExpansionMod;
+import net.jorgefishkin.metallicexpansion.MetallicExpansion;
 import net.jorgefishkin.metallicexpansion.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
-import net.minecraftforge.client.model.generators.ItemModelBuilder;
-import net.minecraftforge.client.model.generators.ItemModelProvider;
-import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.registries.RegistryObject;
+import net.neoforged.neoforge.client.model.generators.ItemModelBuilder;
+import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
+import net.neoforged.neoforge.common.data.ExistingFileHelper;
+import net.neoforged.neoforge.registries.DeferredItem;
 
 public class ModItemModelProvider extends ItemModelProvider {
-    public ModItemModelProvider(PackOutput output,  ExistingFileHelper existingFileHelper) {
-        super(output, MetallicExpansionMod.MOD_ID, existingFileHelper);
+    public ModItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
+        super(output, MetallicExpansion.MODID, existingFileHelper);
     }
 
     @Override
     protected void registerModels() {
-        simpleItem(ModItems.INDIUM_INGOT);
-        simpleItem(ModItems.PLATINUM_INGOT);
-        simpleItem(ModItems.CADMIUM_INGOT);
+        basicItem(ModItems.INDIUM_INGOT.get());
+        basicItem(ModItems.PLATINUM_INGOT.get());
+        basicItem(ModItems.CADMIUM_INGOT.get());
 
-        simpleItem(ModItems.RAW_INDIUM);
-        simpleItem(ModItems.RAW_PLATINUM);
-        simpleItem(ModItems.RAW_CADMIUM);
+        basicItem(ModItems.RAW_INDIUM.get());
+        basicItem(ModItems.RAW_PLATINUM.get());
+        basicItem(ModItems.RAW_CADMIUM.get());
 
-        simpleItem(ModItems.INDIUM_NUGGET);
-        simpleItem(ModItems.PLATINUM_NUGGET);
-        simpleItem(ModItems.CADMIUM_NUGGET);
+        basicItem(ModItems.INDIUM_NUGGET.get());
+        basicItem(ModItems.PLATINUM_NUGGET.get());
+        basicItem(ModItems.CADMIUM_NUGGET.get());
 
-        simpleItem(ModItems.INDIUM_DUST);
-        simpleItem(ModItems.PLATINUM_DUST);
-        simpleItem(ModItems.CADMIUM_DUST);
+        basicItem(ModItems.INDIUM_DUST.get());
+        basicItem(ModItems.PLATINUM_DUST.get());
+        basicItem(ModItems.CADMIUM_DUST.get());
 
-        handheldItem(ModItems.INDIUM_SWORD);
-        handheldItem(ModItems.INDIUM_PICKAXE);
-        handheldItem(ModItems.INDIUM_AXE);
-        handheldItem(ModItems.INDIUM_SHOVEL);
-        handheldItem(ModItems.INDIUM_HOE);
+        /*handheldItem(ModItems.INDIUM_SWORD.get());
+        handheldItem(ModItems.INDIUM_PICKAXE.get());
+        handheldItem(ModItems.INDIUM_AXE.get());
+        handheldItem(ModItems.INDIUM_SHOVEL.get());
+        handheldItem(ModItems.INDIUM_HOE.get());
 
-        handheldItem(ModItems.PLATINUM_SWORD);
-        handheldItem(ModItems.PLATINUM_PICKAXE);
-        handheldItem(ModItems.PLATINUM_AXE);
-        handheldItem(ModItems.PLATINUM_SHOVEL);
-        handheldItem(ModItems.PLATINUM_HOE);
+        handheldItem(ModItems.PLATINUM_SWORD.get());
+        handheldItem(ModItems.PLATINUM_PICKAXE.get());
+        handheldItem(ModItems.PLATINUM_AXE.get());
+        handheldItem(ModItems.PLATINUM_SHOVEL).get();
+        handheldItem(ModItems.PLATINUM_HOE.get());
 
-        handheldItem(ModItems.CADMIUM_SWORD);
-        handheldItem(ModItems.CADMIUM_PICKAXE);
-        handheldItem(ModItems.CADMIUM_AXE);
-        handheldItem(ModItems.CADMIUM_SHOVEL);
-        handheldItem(ModItems.CADMIUM_HOE);
+        handheldItem(ModItems.CADMIUM_SWORD.get());
+        handheldItem(ModItems.CADMIUM_PICKAXE.get());
+        handheldItem(ModItems.CADMIUM_AXE.get());
+        handheldItem(ModItems.CADMIUM_SHOVEL.get());
+        handheldItem(ModItems.CADMIUM_HOE.get());
 
-        simpleItem(ModItems.INDIUM_HELMET);
-        simpleItem(ModItems.INDIUM_CHESTPLATE);
-        simpleItem(ModItems.INDIUM_LEGGINGS);
-        simpleItem(ModItems.INDIUM_BOOTS);
+        basicItem(ModItems.INDIUM_HELMET.get());
+        basicItem(ModItems.INDIUM_CHESTPLATE.get());
+        basicItem(ModItems.INDIUM_LEGGINGS.get());
+        basicItem(ModItems.INDIUM_BOOTS.get());
 
-        simpleItem(ModItems.PLATINUM_HELMET);
-        simpleItem(ModItems.PLATINUM_CHESTPLATE);
-        simpleItem(ModItems.PLATINUM_LEGGINGS);
-        simpleItem(ModItems.PLATINUM_BOOTS);
+        basicItem(ModItems.PLATINUM_HELMET.get());
+        basicItem(ModItems.PLATINUM_CHESTPLATE.get());
+        basicItem(ModItems.PLATINUM_LEGGINGS.get());
+        basicItem(ModItems.PLATINUM_BOOTS.get());
 
-        simpleItem(ModItems.CADMIUM_HELMET);
-        simpleItem(ModItems.CADMIUM_CHESTPLATE);
-        simpleItem(ModItems.CADMIUM_LEGGINGS);
-        simpleItem(ModItems.CADMIUM_BOOTS);
+        basicItem(ModItems.CADMIUM_HELMET.get());
+        basicItem(ModItems.CADMIUM_CHESTPLATE.get());
+        basicItem(ModItems.CADMIUM_LEGGINGS.get());
+        basicItem(ModItems.CADMIUM_BOOTS.get());*/
 
 
     }
-
-
-    // Credits to Kaupenjoe
-    private ItemModelBuilder simpleItem(RegistryObject<Item> item){
-        return withExistingParent(item.getId().getPath(),
-                new ResourceLocation("item/generated")).texture("layer0",
-                new ResourceLocation(MetallicExpansionMod.MOD_ID, "item/" + item.getId().getPath()));
-    }
-
-    private ItemModelBuilder handheldItem(RegistryObject<Item> item){
-        return withExistingParent(item.getId().getPath(),
-                new ResourceLocation("item/handheld")).texture("layer0",
-                new ResourceLocation(MetallicExpansionMod.MOD_ID, "item/" + item.getId().getPath()));
-    }
-
 
 }
