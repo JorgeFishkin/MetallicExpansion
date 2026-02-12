@@ -1,0 +1,19 @@
+{
+  "values": [
+    "metallicexpansion:indium_block",
+    "metallicexpansion:cadmium_block",
+    "metallicexpansion:platinum_block",
+    "metallicexpansion:raw_indium_block",
+    "metallicexpansion:raw_cadmium_block",
+    "metallicexpansion:raw_platinum_block",
+    "metallicexpansion:indium_ore",
+    "metallicexpansion:deepslate_indium_ore",
+    "metallicexpansion:end_stone_indium_ore",
+    "metallicexpansion:cadmium_ore",
+    "metallicexpansion:deepslate_cadmium_ore",
+    "metallicexpansion:netherrack_cadmium_ore",
+    "metallicexpansion:platinum_ore",
+    "metallicexpansion:deepslate_platinum_ore",
+    "metallicexpansion:end_stone_platinum_ore"
+  ]
+}

@@ -8,7 +8,9 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DropExperienceBlock;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.MapColor;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -20,11 +22,14 @@ public class ModBlocks {
 
     // Storage Blocks
     public static final DeferredBlock<Block> INDIUM_BLOCK = registerBlock("indium_block",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.GOLD_BLOCK).requiresCorrectToolForDrops()));
+            () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.METAL)
+                    .requiresCorrectToolForDrops().strength(5.0F, 5.0F).sound(SoundType.METAL)));
     public static final DeferredBlock<Block> PLATINUM_BLOCK = registerBlock("platinum_block",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops()));
+            () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.METAL)
+                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
     public static final DeferredBlock<Block> CADMIUM_BLOCK = registerBlock("cadmium_block",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BLOCK).requiresCorrectToolForDrops()));
+            () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.METAL)
+                    .requiresCorrectToolForDrops().strength(5.0F, 5.0F).sound(SoundType.METAL)));
 
     // Raw Blocks
     public static final DeferredBlock<Block> RAW_INDIUM_BLOCK = registerBlock("raw_indium_block",
