@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:storage_blocks/raw_cadmium"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "metallicexpansion:raw_cadmium"
+  }
+}

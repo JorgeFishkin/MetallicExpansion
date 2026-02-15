@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_indium": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:raw_materials/indium"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "metallicexpansion:raw_indium_block_from_raw_indium"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_raw_indium"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "metallicexpansion:raw_indium_block_from_raw_indium"
+    ]
+  }
+}

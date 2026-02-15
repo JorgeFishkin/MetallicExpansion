@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": {
+      "tag": "c:ingots/indium"
+    },
+    "S": {
+      "tag": "c:rods/wooden"
+    }
+  },
+  "pattern": [
+    " I ",
+    " I ",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "metallicexpansion:indium_sword"
+  }
+}

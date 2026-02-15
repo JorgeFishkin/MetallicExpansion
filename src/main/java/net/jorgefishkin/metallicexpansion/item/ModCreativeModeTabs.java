@@ -32,6 +32,24 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.PLATINUM_DUST);
                         output.accept(ModItems.PLATINUM_NUGGET);
 
+                        output.accept(ModItems.INDIUM_SWORD);
+                        output.accept(ModItems.INDIUM_SHOVEL);
+                        output.accept(ModItems.INDIUM_PICKAXE);
+                        output.accept(ModItems.INDIUM_AXE);
+                        output.accept(ModItems.INDIUM_HOE);
+
+                        output.accept(ModItems.CADMIUM_SWORD);
+                        output.accept(ModItems.CADMIUM_SHOVEL);
+                        output.accept(ModItems.CADMIUM_PICKAXE);
+                        output.accept(ModItems.CADMIUM_AXE);
+                        output.accept(ModItems.CADMIUM_HOE);
+
+                        output.accept(ModItems.PLATINUM_SWORD);
+                        output.accept(ModItems.PLATINUM_SHOVEL);
+                        output.accept(ModItems.PLATINUM_PICKAXE);
+                        output.accept(ModItems.PLATINUM_AXE);
+                        output.accept(ModItems.PLATINUM_HOE);
+
                         output.accept(ModBlocks.RAW_INDIUM_BLOCK);
                         output.accept(ModBlocks.RAW_CADMIUM_BLOCK);
                         output.accept(ModBlocks.RAW_PLATINUM_BLOCK);

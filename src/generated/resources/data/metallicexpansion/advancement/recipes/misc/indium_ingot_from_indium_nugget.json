@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_indium_nugget": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:nuggets/indium"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "metallicexpansion:indium_ingot_from_indium_nugget"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_indium_nugget"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "metallicexpansion:indium_ingot_from_indium_nugget"
+    ]
+  }
+}

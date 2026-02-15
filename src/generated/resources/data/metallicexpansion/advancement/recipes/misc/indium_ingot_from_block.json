@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_indium_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:storage_blocks/indium"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "metallicexpansion:indium_ingot_from_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_indium_block"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "metallicexpansion:indium_ingot_from_block"
+    ]
+  }
+}
