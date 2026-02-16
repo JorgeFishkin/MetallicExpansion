@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": {
+      "tag": "c:ingots/cadmium"
+    }
+  },
+  "pattern": [
+    "III",
+    "I I",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "metallicexpansion:cadmium_helmet"
+  }
+}

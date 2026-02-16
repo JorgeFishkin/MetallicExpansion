@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cadmium_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:ingots/cadmium"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "metallicexpansion:cadmium_chestplate"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_cadmium_ingot"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "metallicexpansion:cadmium_chestplate"
+    ]
+  }
+}

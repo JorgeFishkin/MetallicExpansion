@@ -1,8 +1,8 @@
 package net.jorgefishkin.metallicexpansion;
 
-import net.jorgefishkin.metallicexpansion.block.ModBlocks;
-import net.jorgefishkin.metallicexpansion.item.ModCreativeModeTabs;
-import net.jorgefishkin.metallicexpansion.item.ModItems;
+import net.jorgefishkin.metallicexpansion.block.MEBlocks;
+import net.jorgefishkin.metallicexpansion.item.MECreativeModeTabs;
+import net.jorgefishkin.metallicexpansion.item.MEItems;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -35,11 +35,11 @@ public class MetallicExpansion {
         modEventBus.addListener(this::commonSetup);
 
         // Register the Deferred Register to the mod event bus so blocks get registered
-        ModBlocks.register(modEventBus);
+        MEBlocks.register(modEventBus);
         // Register the Deferred Register to the mod event bus so items get registered
-        ModItems.register(modEventBus);
+        MEItems.register(modEventBus);
         // Register the Deferred Register to the mod event bus so tabs get registered
-        ModCreativeModeTabs.register(modEventBus);
+        MECreativeModeTabs.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (MetallicExpansion) to respond directly to events.
