@@ -65,5 +65,9 @@
   "block.metallicexpansion.deepslate_cadmium_ore" : "Deepslate Cadmium Ore",
   "block.metallicexpansion.netherrack_cadmium_ore" : "Netherrack Cadmium Ore",
 
+  "trim_material.metallicexpansion.cadmium" : "Cadmium Material",
+  "trim_material.metallicexpansion.indium" : "Indium Material",
+  "trim_material.metallicexpansion.platinum" : "Platinum Material",
+
   "creativetab.metallicexpansion.metallic_expansion" : "Metallic Expansion"
 }

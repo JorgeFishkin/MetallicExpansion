@@ -135,6 +135,7 @@ public class MERecipeProvider extends RecipeProvider implements IConditionBuilde
                     .define('I', METags.getTagsFor(m).INGOT)
                     .unlockedBy("has_"+name+"_ingot", has(METags.getTagsFor(m).INGOT))
                     .save(recipeOutput);
+
         }
     }
 }

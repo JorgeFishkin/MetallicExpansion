@@ -23,3 +23,7 @@ run
 
 # Files from Forge MDK
 forge*changelog.txt
+
+# Generated cache/templates
+src/generated/resources/.cache
+src/main/templates

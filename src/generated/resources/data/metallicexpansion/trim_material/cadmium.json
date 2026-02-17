@@ -1,0 +1,9 @@
+{
+  "asset_name": "cadmium",
+  "description": {
+    "color": "#DCDCD7",
+    "translate": "trim_material.metallicexpansion.cadmium"
+  },
+  "ingredient": "metallicexpansion:cadmium_ingot",
+  "item_model_index": 0.2
+}

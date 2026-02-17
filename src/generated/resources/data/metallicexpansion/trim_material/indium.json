@@ -1,0 +1,9 @@
+{
+  "asset_name": "indium",
+  "description": {
+    "color": "#C5E1F6",
+    "translate": "trim_material.metallicexpansion.indium"
+  },
+  "ingredient": "metallicexpansion:indium_ingot",
+  "item_model_index": 0.2
+}

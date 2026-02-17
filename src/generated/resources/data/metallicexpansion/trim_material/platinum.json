@@ -1,0 +1,9 @@
+{
+  "asset_name": "platinum",
+  "description": {
+    "color": "#EBEBEF",
+    "translate": "trim_material.metallicexpansion.platinum"
+  },
+  "ingredient": "metallicexpansion:platinum_ingot",
+  "item_model_index": 0.2
+}

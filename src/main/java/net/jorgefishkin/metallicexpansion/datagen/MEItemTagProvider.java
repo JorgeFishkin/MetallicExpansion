@@ -97,6 +97,8 @@ public class MEItemTagProvider extends ItemTagsProvider {
                     .add(m.getLeggings().get());
             tag(ItemTags.FOOT_ARMOR)
                     .add(m.getBoots().get());
+            tag(ItemTags.TRIM_MATERIALS)
+                    .add(m.getIngot().get());
 
             // NeoForge Tags
             tag(Tags.Items.MELEE_WEAPON_TOOLS)

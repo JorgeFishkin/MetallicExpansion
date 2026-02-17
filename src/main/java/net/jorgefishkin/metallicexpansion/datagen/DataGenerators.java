@@ -33,6 +33,8 @@ public class DataGenerators {
                 List.of(new LootTableProvider.SubProviderEntry(MEBlockLootTableProvider::new, LootContextParamSets.BLOCK)), lookupProvider));
         generator.addProvider(event.includeServer(), new MERecipeProvider(packOutput, lookupProvider));
 
+        generator.addProvider(event.includeServer(), new MEDatapackProvider(packOutput, lookupProvider));
+
 
         generator.addProvider(event.includeClient(), new MEItemModelProvider(packOutput, existingFileHelper));
         generator.addProvider(event.includeClient(), new MEBlockStateProvider(packOutput, existingFileHelper));
