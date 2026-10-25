@@ -134,6 +134,13 @@ public enum EnumMaterials {
             case PLATINUM -> MEBlocks.DEEPSLATE_PLATINUM_ORE;
         };
     }
+    public DeferredBlock<Block> getDimensionalOre() {
+        return switch (this) {
+            case CADMIUM -> MEBlocks.NETHERRACK_CADMIUM_ORE;
+            case INDIUM -> MEBlocks.END_STONE_INDIUM_ORE;
+            case PLATINUM -> MEBlocks.END_STONE_PLATINUM_ORE;
+        };
+    }
     public ArrayList<DeferredBlock<Block>> getOreList(){
         ArrayList<DeferredBlock<Block>> oreList = new ArrayList<>();
         switch (this) {

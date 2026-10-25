@@ -1,13 +1,16 @@
 package net.jorgefishkin.metallicexpansion.datagen;
 
+
 import net.jorgefishkin.metallicexpansion.util.EnumMaterials;
 import net.jorgefishkin.metallicexpansion.util.METags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.level.ItemLike;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 
+import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 public class MERecipeProvider extends RecipeProvider implements IConditionBuilder {
@@ -17,6 +20,7 @@ public class MERecipeProvider extends RecipeProvider implements IConditionBuilde
 
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput) {
+
 
         for(EnumMaterials m : EnumMaterials.values()) {
             String name = m.name().toLowerCase();
@@ -75,6 +79,8 @@ public class MERecipeProvider extends RecipeProvider implements IConditionBuilde
                     .define('S', Tags.Items.RODS_WOODEN)
                     .unlockedBy("has_"+name+"_ingot", has(METags.getTagsFor(m).INGOT))
                     .save(recipeOutput);
+
+            // Pickaxe
             ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, m.getPickaxe())
                     .pattern("III")
                     .pattern(" S ")
@@ -83,6 +89,8 @@ public class MERecipeProvider extends RecipeProvider implements IConditionBuilde
                     .define('S', Tags.Items.RODS_WOODEN)
                     .unlockedBy("has_"+name+"_ingot", has(METags.getTagsFor(m).INGOT))
                     .save(recipeOutput);
+
+            // Axe
             ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, m.getAxe())
                     .pattern("II ")
                     .pattern("IS ")
@@ -91,6 +99,8 @@ public class MERecipeProvider extends RecipeProvider implements IConditionBuilde
                     .define('S', Tags.Items.RODS_WOODEN)
                     .unlockedBy("has_"+name+"_ingot", has(METags.getTagsFor(m).INGOT))
                     .save(recipeOutput);
+
+            // Shovel
             ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, m.getShovel())
                     .pattern(" I ")
                     .pattern(" S ")
@@ -99,6 +109,8 @@ public class MERecipeProvider extends RecipeProvider implements IConditionBuilde
                     .define('S', Tags.Items.RODS_WOODEN)
                     .unlockedBy("has_"+name+"_ingot", has(METags.getTagsFor(m).INGOT))
                     .save(recipeOutput);
+
+            // Hoe
             ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, m.getHoe())
                     .pattern("II ")
                     .pattern(" S ")
@@ -107,6 +119,8 @@ public class MERecipeProvider extends RecipeProvider implements IConditionBuilde
                     .define('S', Tags.Items.RODS_WOODEN)
                     .unlockedBy("has_"+name+"_ingot", has(METags.getTagsFor(m).INGOT))
                     .save(recipeOutput);
+
+            // Helmet
             ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, m.getHelmet())
                     .pattern("III")
                     .pattern("I I")
@@ -114,6 +128,8 @@ public class MERecipeProvider extends RecipeProvider implements IConditionBuilde
                     .define('I', METags.getTagsFor(m).INGOT)
                     .unlockedBy("has_"+name+"_ingot", has(METags.getTagsFor(m).INGOT))
                     .save(recipeOutput);
+
+            // Chestplate
             ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, m.getChestplate())
                     .pattern("I I")
                     .pattern("III")
@@ -121,6 +137,8 @@ public class MERecipeProvider extends RecipeProvider implements IConditionBuilde
                     .define('I', METags.getTagsFor(m).INGOT)
                     .unlockedBy("has_"+name+"_ingot", has(METags.getTagsFor(m).INGOT))
                     .save(recipeOutput);
+
+            // Leggings
             ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, m.getLeggings())
                     .pattern("III")
                     .pattern("I I")
@@ -128,6 +146,8 @@ public class MERecipeProvider extends RecipeProvider implements IConditionBuilde
                     .define('I', METags.getTagsFor(m).INGOT)
                     .unlockedBy("has_"+name+"_ingot", has(METags.getTagsFor(m).INGOT))
                     .save(recipeOutput);
+
+            // Boots
             ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, m.getBoots())
                     .pattern("   ")
                     .pattern("I I")
@@ -135,6 +155,12 @@ public class MERecipeProvider extends RecipeProvider implements IConditionBuilde
                     .define('I', METags.getTagsFor(m).INGOT)
                     .unlockedBy("has_"+name+"_ingot", has(METags.getTagsFor(m).INGOT))
                     .save(recipeOutput);
+
+            // Smelting recipes
+            List<ItemLike> SMELTABLES = List.of(m.getOre(), m.getDeepslateOre(), m.getDimensionalOre(), m.getRaw());
+
+            oreSmelting(recipeOutput, SMELTABLES, RecipeCategory.MISC, m.getIngot(), 0.25f, 200, name);
+            oreBlasting(recipeOutput, SMELTABLES, RecipeCategory.MISC, m.getIngot(), 0.25f, 100, name);
 
         }
     }
