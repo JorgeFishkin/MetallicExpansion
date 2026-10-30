@@ -157,7 +157,7 @@ public class MERecipeProvider extends RecipeProvider implements IConditionBuilde
                     .save(recipeOutput);
 
             // Smelting recipes
-            List<ItemLike> SMELTABLES = List.of(m.getOre(), m.getDeepslateOre(), m.getDimensionalOre(), m.getRaw());
+            List<ItemLike> SMELTABLES = List.of(m.getOre(), m.getDeepslateOre(), m.getDimensionalOre(), m.getRaw(), m.getDust());
 
             oreSmelting(recipeOutput, SMELTABLES, RecipeCategory.MISC, m.getIngot(), 0.25f, 200, name);
             oreBlasting(recipeOutput, SMELTABLES, RecipeCategory.MISC, m.getIngot(), 0.25f, 100, name);
