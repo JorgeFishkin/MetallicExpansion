@@ -35,12 +35,12 @@ public class MEPlacedFeatures {
                 MEOrePlacement.commonOrePlacement(14, HeightRangePlacement.triangle(VerticalAnchor.absolute(3), VerticalAnchor.absolute(128))));
 
         register(context, OVERWORLD_INDIUM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(MEConfiguredFeatures.OVERWORLD_INDIUM_ORE_KEY),
-                MEOrePlacement.commonOrePlacement(18, HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(180))));
+                MEOrePlacement.commonOrePlacement(12, HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(60))));
         register(context, END_INDIUM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(MEConfiguredFeatures.END_INDIUM_ORE_KEY),
                 MEOrePlacement.commonOrePlacement(10, HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(200))));
 
         register(context, OVERWORLD_PLATINUM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(MEConfiguredFeatures.OVERWORLD_PLATINUM_ORE_KEY),
-                MEOrePlacement.commonOrePlacement(5, HeightRangePlacement.triangle(VerticalAnchor.absolute(-38), VerticalAnchor.absolute(90))));
+                MEOrePlacement.commonOrePlacement(5, HeightRangePlacement.triangle(VerticalAnchor.absolute(-38), VerticalAnchor.absolute(50))));
         register(context, OVERWORLD_PLATINUM_ORE_LOWER_PLACED_KEY, configuredFeatures.getOrThrow(MEConfiguredFeatures.OVERWORLD_PLATINUM_ORE_KEY),
                 MEOrePlacement.commonOrePlacement(8, HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(-38))));
         register(context, END_PLATINUM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(MEConfiguredFeatures.END_PLATINUM_ORE_KEY),
